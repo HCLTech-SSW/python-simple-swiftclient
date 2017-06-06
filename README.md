@@ -1,12 +1,12 @@
 ---
-Title:
-Description:
-Owner of the Project:
-Contributor:
-Mail To:
-Tags:
-Created:
-Modified:
+Title: python-simple-swiftclient
+Description: This project is owned by HCL Tech System Software team to provide the simple swift client to support the object upload and download operation over OpenStack Swift.
+Owner of the Project: HCL Tech System Software Team
+Contributor: HCL Tech System Software Team
+Mail To: hcl_ss_oss@hcl.com
+Tags: python-simple-swiftclient, swift-client, swift-python-library, simple-swiftclient
+Created: 2017 Jun 05
+Modified: 2017 Jun 06
 ---
 
 python-simple-swiftclient 
