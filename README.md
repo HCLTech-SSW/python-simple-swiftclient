@@ -30,20 +30,16 @@ How to Execute
 
 For Upload operation the following command will be executed:
 <pre>
-	python-simple-swiftclient --os-username <username> --os-password <password> --os-project-name <project name> --os-auth-url <http://<yourhost>:35357/v3>
-    --os-user-domain-name <user domain name> --os-project-domain-name <project domain name> --os-storage-url <http://yourhost:8080/v1/AUTH_<tenant_id>> 
-    --operation-type upload --container <container-name> --upload-path <Upload path of File or Directory>
+python-simple-swiftclient --os-username <username> --os-password <password> --os-project-name <project name> --os-auth-url <http://<yourhost>:35357/v3> --os-user-domain-name <user domain name> --os-project-domain-name <project domain name> --os-storage-url <http://yourhost:8080/v1/AUTH_<tenant_id>> --operation-type upload --container <container-name> --upload-path <Upload path of File or Directory>
 </pre>
 
 For Download operation the following command will be executed:
 <pre>
-    python-simple-swiftclient --os-username <username> --os-password <password> --os-project-name <project name> --os-auth-url <http://<yourhost>:35357/v3>
-    --os-user-domain-name <user domain name> --os-project-domain-name <project domain name> --os-storage-url <http://yourhost:8080/v1/AUTH_<tenant_id>> 
-    --operation-type download --container <container-name> --object <Name of the object to be downloaded> --download-path <Download path of File> 
+python-simple-swiftclient --os-username <username> --os-password <password> --os-project-name <project name> --os-auth-url <http://<yourhost>:35357/v3> --os-user-domain-name <user domain name> --os-project-domain-name <project domain name> --os-storage-url <http://yourhost:8080/v1/AUTH_<tenant_id>> --operation-type download --container <container-name> --object <Name of the object to be downloaded> --download-path <Download path of File> 
 </pre>
 
 Example for Operations
-===========+==========
+======================
   
 The following directory structure explained as an example for Upload and Download operation:
  
@@ -55,26 +51,23 @@ dir1
 |    |-- sample.txt 
 </pre>
 
-<pre>
 Example 1:
-
-	$ python-simple-swiftclient [...] --operation-type upload --container <container> --upload-path dir1/dir2/image1.jpg
+<pre>
+$ python-simple-swiftclient [...] --operation-type upload --container <container> --upload-path dir1/dir2/image1.jpg
 	
 This command will create an object over OpenStack swift named as **dir1/dir2/image1.jpg**
 </pre>
 
-<pre>
 Example 2:
-
-	$ python-simple-swiftclient [...] --operation-type upload --container <container> --upload-path dir1/
+<pre>
+$ python-simple-swiftclient [...] --operation-type upload --container <container> --upload-path dir1/
 	
 This command will create 2 objects over OpenStack swift named as **dir1/dir2/image1.jpg** and **dir1/dir3/sample.txt**
 </pre>
 
-<pre>
 Example 3:
-
-	$ python-simple-swiftclient [...] --operation-type download --container <container> --object dir1/dir2/image1.jpg --download-path /home/admin/download
+<pre>
+$ python-simple-swiftclient [...] --operation-type download --container <container> --object dir1/dir2/image1.jpg --download-path /home/admin/download
 
 This command will download image1.jpg from OpenStack swift to /home/admin/download
 </pre>
