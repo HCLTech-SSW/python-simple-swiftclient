@@ -22,7 +22,7 @@ How to Install
 
 In order to install the client, the following command will be used:
 <pre>
-	pip install python-simple-swiftclient 
+pip install python-simple-swiftclient 
 </pre>
 
 How to Execute
