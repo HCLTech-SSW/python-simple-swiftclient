@@ -39,8 +39,8 @@ The following directory structure explained as an example for Upload and Downloa
 dir1
 |-- dir2
 |    |-- image1.jpg 
-|-- dir3|    
-|-- sample.txt 
+|-- dir3
+|    |-- sample.txt 
 </pre>
 
 Example 1:
