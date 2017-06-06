@@ -1,3 +1,4 @@
+
 ---
 Title: python-simple-swiftclient
 Description: This project is owned by HCL Tech System Software team to provide the simple swift client to support the object upload and download operation over OpenStack Swift.
@@ -33,7 +34,7 @@ python-simple-swiftclient --os-username [username] --os-password [password] --os
 </pre>
 
 Example for Operations
-======================  
+======================
 The following directory structure explained as an example for Upload and Download operation: 
 <pre>
 dir1
